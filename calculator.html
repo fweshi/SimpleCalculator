@@ -10,25 +10,38 @@
     <div class="calculator">
         <input type="text" id="display">
         <div class="buttons">
-            <button class="clear"  onclick="clearDisplay()">C</button>
-            <button class="operator" onclick="operate('/')">/</button>
-            <button class="operator" onclick="operate('')"></button>
-            <button class="operator" onclick="operate('-')">-</button>
-            <button class="number" onclick="addToDisplay('7')">7</button>
+            <div class="top">
+                <button class="clear"  onclick="clearDisplay()">C</button>
+                <button class="operator" onclick="operate('/')">/</button>
+                <button class="operator" onclick="operate('*')">*</button>
+                <button class="operator" onclick="operate('-')">-</button>
+            </div>
+           <div class="middle">
+             <button class="number" onclick="addToDisplay('7')">7</button>
             <button class="number" onclick="addToDisplay('8')">8</button>
             <button class="number" onclick="addToDisplay('9')">9</button>
             <button class="operator" onclick="operate('+')">+</button>
+           </div>
+           
+            <div class="bottom">
             <button class="number" onclick="addToDisplay('4')">4</button>
             <button class="number" onclick="addToDisplay('5')">5</button>
             <button class="number" onclick="addToDisplay('6')">6</button>
             <button class="number" onclick="addToDisplay('1')">1</button>
-            <button class="number" onclick="addToDisplay('2')">2</button>
-            <button class="number" onclick="addToDisplay('3')">3</button>
-            <button class="number" onclick="addToDisplay('0')">0</button>
-            <button class="operator" onclick="appendDecimal('.')">.</button>
+            </div>
+
+            <div class="bottomt">
+                <button class="number" onclick="addToDisplay('2')">2</button>
+                <button class="number" onclick="addToDisplay('3')">3</button>
+                <button class="number" onclick="addToDisplay('0')">0</button>
+                <button class="operator" onclick="appendDecimal('.')">.</button>
+            </div>
+            
+            <div class="bottomb">
             <button class="equals" onclick="calculate()">=</button>
+            </div>
         </div>
     </div>
-    <!-- END OF HTML -->
+    <!-- END OF HTML, Review Again -->
 </body>
 </html>
