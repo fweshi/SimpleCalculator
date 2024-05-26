@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="calculator.css">
 </head>
 <body>
     <!-- HTML SECTION DONE BY CARLOS, MUIZ, TJ -->
@@ -11,19 +12,19 @@
         <input type="text" id="display">
         <div class="buttons">
             <div class="top">
-                <button class="clear"  onclick="clearDisplay()">C</button>
-                <button class="operator" onclick="operate('/')">/</button>
-                <button class="operator" onclick="operate('*')">*</button>
-                <button class="operator" onclick="operate('-')">-</button>
+                <button class="clear" id="plus" onclick="clearDisplay()">C</button>
+                <button class="operator" id="plus" onclick="operate('/')">/</button>
+                <button class="operator"id="plus"onclick="operate('*')">*</button>
+                <button class="operator"id="plus" onclick="operate('-')">-</button>
             </div>
            <div class="middle">
              <button class="number" onclick="addToDisplay('7')">7</button>
             <button class="number" onclick="addToDisplay('8')">8</button>
             <button class="number" onclick="addToDisplay('9')">9</button>
-            <button class="operator" onclick="operate('+')">+</button>
+            <button class="operator " id="plus" onclick="operate('+')">+</button>
            </div>
            
-            <div class="bottom">
+            <div class="bottom" id="bottom">
             <button class="number" onclick="addToDisplay('4')">4</button>
             <button class="number" onclick="addToDisplay('5')">5</button>
             <button class="number" onclick="addToDisplay('6')">6</button>
@@ -38,7 +39,7 @@
             </div>
             
             <div class="bottomb">
-            <button class="equals" onclick="calculate()">=</button>
+            <button class="equals" id="equals" onclick="calculate()">=</button>
             </div>
         </div>
     </div>
