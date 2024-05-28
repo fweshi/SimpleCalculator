@@ -1,5 +1,4 @@
 // Starts: Abel //
-
 let display = document.getElementById('display');
 let currentInput = '';
 let operator = '';
@@ -26,7 +25,6 @@ function appendOperator(op) {
     operator = op;
     shouldResetScreen = true;
 }
-
 // Stop: Abel //
 
 function appendDecimal() {
