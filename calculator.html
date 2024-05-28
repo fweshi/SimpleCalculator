@@ -3,46 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="calculator.css">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- HTML SECTION DONE BY CARLOS, MUIZ, TJ -->
     <div class="calculator">
-        <input type="text" id="display">
+        <div class="display" id="display">0</div>
         <div class="buttons">
-            <div class="top">
-                <button class="clear" id="plus" onclick="clearDisplay()">C</button>
-                <button class="operator" id="plus" onclick="operate('/')">/</button>
-                <button class="operator"id="plus"onclick="operate('*')">*</button>
-                <button class="operator"id="plus" onclick="operate('-')">-</button>
-            </div>
-           <div class="middle">
-             <button class="number" onclick="addToDisplay('7')">7</button>
-            <button class="number" onclick="addToDisplay('8')">8</button>
-            <button class="number" onclick="addToDisplay('9')">9</button>
-            <button class="operator " id="plus" onclick="operate('+')">+</button>
-           </div>
-           
-            <div class="bottom" id="bottom">
-            <button class="number" onclick="addToDisplay('4')">4</button>
-            <button class="number" onclick="addToDisplay('5')">5</button>
-            <button class="number" onclick="addToDisplay('6')">6</button>
-            <button class="number" onclick="addToDisplay('1')">1</button>
-            </div>
-
-            <div class="bottomt">
-                <button class="number" onclick="addToDisplay('2')">2</button>
-                <button class="number" onclick="addToDisplay('3')">3</button>
-                <button class="number" onclick="addToDisplay('0')">0</button>
-                <button class="operator" onclick="appendDecimal('.')">.</button>
-            </div>
-            
-            <div class="bottomb">
-            <button class="equals" id="equals" onclick="calculate()">=</button>
-            </div>
+            <button class="btn operator" onclick="clearDisplay()">C</button>
+            <button class="btn operator" onclick="appendOperator('/')">/</button>
+            <button class="btn operator" onclick="appendOperator('*')">*</button>
+            <button class="btn operator" onclick="appendOperator('-')">-</button>
+            <button class="btn" onclick="appendNumber(7)">7</button>
+            <button class="btn" onclick="appendNumber(8)">8</button>
+            <button class="btn" onclick="appendNumber(9)">9</button>
+            <button class="btn operator" onclick="appendOperator('+')">+</button>
+            <button class="btn" onclick="appendNumber(4)">4</button>
+            <button class="btn" onclick="appendNumber(5)">5</button>
+            <button class="btn" onclick="appendNumber(6)">6</button>
+            <button class="btn" onclick="appendNumber(1)">1</button>
+            <button class="btn" onclick="appendNumber(2)">2</button>
+            <button class="btn" onclick="appendNumber(3)">3</button>
+            <button class="btn" onclick="appendNumber(0)">0</button>
+            <button class="btn" onclick="appendDecimal()">.</button>
+            <button class="btn equal" onclick="calculateResult()">=</button>
         </div>
     </div>
-    <!-- END OF HTML, Review Again -->
+    <script src="scripts.js"></script>
 </body>
 </html>
